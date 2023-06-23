@@ -1,0 +1,65 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+ <servlet>
+        <servlet-name>MiServlet</servlet-name>
+        <servlet-class>MiServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MiServlet</servlet-name>
+        <url-pattern>/MiServlet</url-pattern>
+    </servlet-mapping>
+
+
+ <servlet>
+        <servlet-name>ComentarioServlet</servlet-name>
+        <servlet-class>controller.ComentarioServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ComentarioServlet</servlet-name>
+        <url-pattern>/ComentarioServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>VerUsuariosServlet</servlet-name>
+        <servlet-class>controller.VerUsuariosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerUsuariosServlet</servlet-name>
+        <url-pattern>/VerUsuariosServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>RegistroUsuario</servlet-name>
+        <servlet-class>controller.RegistroUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistroUsuario</servlet-name>
+        <url-pattern>/RegistroUsuario</url-pattern>
+    </servlet-mapping>
+
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+
+
+
+<servlet>
+        <servlet-name>IniciarSesionServlet</servlet-name>
+        <servlet-class>IniciarSesionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IniciarSesionServlet</servlet-name>
+        <url-pattern>/IniciarSesionServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
